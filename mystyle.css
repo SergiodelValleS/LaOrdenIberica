@@ -1,0 +1,100 @@
+html{
+    cursor: url('./cursor.cur'), auto;
+}
+body{
+ position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  font-family:'Times New Roman', Times, serif !important;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://wow.zamimg.com/uploads/screenshots/normal/1059910.jpg?maxWidth=1200);
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+h1,h2,h3,h4,h5{
+    color:#FFB019 !important;
+}
+p,label{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+}
+span {
+  color:#FFB019 !important;
+  font-weight: 700;
+}
+nav{
+   // border:1px solid yellow;
+   // justify-content: center;
+}
+.centrado{
+    text-align:center;
+}
+
+.col {
+  display: flex;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
+  height: 100px;             /* Asegura altura para ver el efecto */
+}
+.col p {
+  margin: 0;
+}
+.row .col {
+   background-color:rgba(8,8,8,0.7);
+}
+.row .col:hover{
+  background-color:rgba(121, 122, 123,0.7);
+  color:red;
+  cursor:pointer;
+}
+.a-nav,.a-nav:hover{
+text-decoration: none;
+}
+.a-norma{
+text-decoration: underline;
+color:#FFB019 !important;
+}
+.a-norma:hover{
+text-decoration: underline;
+color:red !important;
+}
+.recuadro {
+  position: relative;
+  border: 1px solid white;
+  margin-top: 10px;
+  padding: 10px;
+  overflow: hidden; /* Evita que el fondo sobresalga */
+}
+
+.recuadro::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: #080808;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/*content: "" → necesario para que el pseudo-elemento se renderice.
+
+position: absolute + top/left/width/height → para que ocupe todo el fondo.
+
+z-index: -1 → lo coloca detrás del contenido.
+
+position: relative en .recuadro → para que el ::before se posicione dentro de él.
+
+overflow: hidden → evita que el fondo se desborde si hay bordes redondeados o efectos.*/
+
+li{
+    color:white;
+}
