@@ -75,9 +75,6 @@ color:#FFB019 !important;
 text-decoration: underline;
 color:red !important;
 }
-.divNav{
-    padding:0 ! important;
-}
 .recuadro {
   position: relative;
   border: 1px solid white;
@@ -108,4 +105,10 @@ overflow: hidden → evita que el fondo se desborde si hay bordes redondeados o 
 
 li{
     color:white;
+}
+
+@media only screen and (max-width: 600px) {
+    a h1 {
+        font-size: calc(1.375rem + 0.75vw) !important;
+    }
 }
