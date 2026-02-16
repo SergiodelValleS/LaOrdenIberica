@@ -57,6 +57,13 @@ nav{
   cursor:pointer;
 }
 .a-nav,.a-nav:hover{
+/*Necesario para que ocupe el 100% del div que lo contiene*/
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+/*Necesario para que ocupe el 100% del div que lo contiene*/
 text-decoration: none;
 padding:0 !important;
 }
@@ -67,6 +74,9 @@ color:#FFB019 !important;
 .a-norma:hover{
 text-decoration: underline;
 color:red !important;
+}
+.divNav{
+    padding:0 ! important;
 }
 .recuadro {
   position: relative;
