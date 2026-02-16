@@ -58,6 +58,7 @@ nav{
 }
 .a-nav,.a-nav:hover{
 text-decoration: none;
+padding:0 !important;
 }
 .a-norma{
 text-decoration: underline;
