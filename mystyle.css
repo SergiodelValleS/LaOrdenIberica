@@ -8,7 +8,7 @@ body{
   z-index: 1;
   font-family:'Times New Roman', Times, serif !important;
 }
-body::before{
+body::before{ /*De esta manera puedo generar recuadros ligeramente transparentes sin volver el texto en su interior transparente */
     content: "";
     position: fixed;
     top: 0;
